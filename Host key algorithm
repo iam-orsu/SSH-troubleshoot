@@ -1,3 +1,5 @@
 Getting a error? "Unable to negotiate with 10.10.10.136 port 22: no matching host key type found. Their offer: ssh-rsa,ssh-dss"
-Then use this coomand:
+Then use this comand:
 ssh -oHostKeyAlgorithms=+ssh-dss hostname@10.10.10.136
+or
+ssh 10.10.10.13 -oKexAlgorithms=+diffie-hellman-group1-sha1 -c <cipher>
